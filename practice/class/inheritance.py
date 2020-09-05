@@ -15,13 +15,10 @@ class Prism:
 pre = Prism(10, 20, 30)
 print(pre.content())
 
-#クラス内のアトリビュートを書き換える
-pre.height= 100
-print(pre.content())
-
-#クラスの継承
+#クラスの継承とスーパークラスの取得
 class Cubu(Prism):
     def __init__(self, length):
+        super().__init__(length, length, length)
         self.width = self.height = self.depth = length
 
 cubu = Cubu(20)
