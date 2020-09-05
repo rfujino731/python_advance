@@ -19,12 +19,14 @@ class Person(object):
         print("hello")
         print("I am {}.".format(self.name))
 
+    def __say_secret(self):
+        print("bye")
+
 #インスタンスを作成
 person = Person("ema")
 
+#クラスメソッドを呼び出す(通常の方法)
 print(person.say_something())
-#クラス変数は、インスタンス.変数名で呼び出せる
-print(person.value)
-#プライベート変数は、インスタンス._クラス名__変数名で呼び出せる
-#この方法は推奨されていない
-print(person._Person__secret)
+
+#プライベートメソッドを呼び出す
+print(person._Person__say_secret())
