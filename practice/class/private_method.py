@@ -1,11 +1,4 @@
 #プライベートクラス変数
-class Per:
-    def __init__(self, name):
-        self.name = "name"
-        self.__momney = 20
-    def confirm(self, age):
-        self.age = age
-
 #objectは書かなくてもpython3なら動作する
 #python2の名残で書くことが多い
 class Person(object):
