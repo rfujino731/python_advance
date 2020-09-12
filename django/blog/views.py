@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.utils import timezone
-from .model import Post
+from .models import Post
 
 def post_list(request):
     #今回はデプロイしないので、publicに関する記述はいらないが、見本通りに記述する。
